@@ -1,7 +1,9 @@
+import { Hero } from '@/components/Hero';
+
 export function App() {
   return (
-    <>
-      <h1>Hello, friend!</h1>
-    </>
+    <main className='flex flex-col container mx-auto p-10 max-w-4xl lg:pr-10 lg:pl-0 lg:max-w-6xl'>
+      <Hero />
+    </main>
   );
 }
