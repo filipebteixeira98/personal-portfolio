@@ -1,3 +1,4 @@
+import { About } from '@/components/About';
 import { Hero } from '@/components/Hero';
 import { Projects } from '@/components/Projects';
 import { Stats } from '@/components/Stats';
@@ -8,6 +9,7 @@ export function App() {
       <Hero />
       <Stats />
       <Projects />
+      <About />
     </main>
   );
 }
