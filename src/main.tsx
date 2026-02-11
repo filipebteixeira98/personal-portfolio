@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')!).render(
     <div className='min-h-screen lg:flex lg:justify-center lg:items-start lg:gap-10'>
       <Sidebar />
       <FloatingMenu />
-      <Profile />+
+      <Profile />
       <App />
     </div>
   </StrictMode>,
