@@ -1,6 +1,7 @@
 import { About } from '@/components/About';
 import { Hero } from '@/components/Hero';
 import { Projects } from '@/components/Projects';
+import { Services } from '@/components/Services';
 import { Stats } from '@/components/Stats';
 
 export function App() {
@@ -10,6 +11,7 @@ export function App() {
       <Stats />
       <Projects />
       <About />
+      <Services />
     </main>
   );
 }
