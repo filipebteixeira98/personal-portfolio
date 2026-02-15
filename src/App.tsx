@@ -4,6 +4,7 @@ import { Projects } from '@/components/Projects';
 import { Resume } from '@/components/Resume';
 import { Services } from '@/components/Services';
 import { Stats } from '@/components/Stats';
+import { Testimonials } from '@/components/Testimonials';
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
       <About />
       <Services />
       <Resume />
+      <Testimonials />
     </main>
   );
 }
