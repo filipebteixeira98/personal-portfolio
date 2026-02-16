@@ -1,4 +1,5 @@
 import { About } from '@/components/About';
+import { Contact } from '@/components/Contact';
 import { Hero } from '@/components/Hero';
 import { Projects } from '@/components/Projects';
 import { Resume } from '@/components/Resume';
@@ -16,6 +17,7 @@ export function App() {
       <Services />
       <Resume />
       <Testimonials />
+      <Contact />
     </main>
   );
 }
