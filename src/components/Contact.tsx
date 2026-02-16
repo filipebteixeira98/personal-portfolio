@@ -1,3 +1,4 @@
+import { Send } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Controller, useForm } from 'react-hook-form';
 
@@ -8,7 +9,6 @@ import { Button } from '@/components/ui/button';
 import { Field, FieldError, FieldLabel } from '@/components/ui/field';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Send } from 'lucide-react';
 
 type ContactFormValues = {
   name: string;
