@@ -23,28 +23,30 @@ export function About() {
         variants={fadeUp}
         className='mt-4 text-neutral-300'
       >
-        I'm a full stack developer passionate about transforming complex
-        problems into clear, intuitive digital experiences. I believe great
-        design isn't just about how something looks, it's about how it works. My
-        approach blends creativity with strategy, ensuring every interface not
-        only looks good but also feels effortless to use.
+        Solving complex puzzles through clean code and thoughtful design. As a
+        Full Stack Developer, I bridge the gap between back-end logic and
+        front-end beauty. My mission is simple: to create digital products that
+        feel natural and perform flawlessly
       </motion.p>
       <motion.p
         variants={fadeUp}
         className='mt-2 text-neutral-300'
       >
-        Over the past few years, I've worked across web, brand, and product
-        design-bringing ideas to life through modern tools like Figma, React,
-        and Tailwind CSS. Whether it's building a design system, crafting a
-        responsive website, or refining the smallest detail in a button
-        animation, I'm always driven by one goal: creating meaningful,
-        human-centered design that makes technology feel simple.
+        Over the years, I’ve shaped web, brand, and product experiences using
+        Figma, React, and Tailwind CSS. From architecting scalable design
+        systems to perfecting a single button animation, I focus on making
+        technology feel human, helpful, and simple
       </motion.p>
       <motion.div
         variants={fadeUp}
         transition={{ delay: 0.2 }}
       >
-        <Button className='mt-5'>Contact me</Button>
+        <Button
+          asChild
+          className='mt-5'
+        >
+          <a href='#contact'>Contact me</a>
+        </Button>
       </motion.div>
     </motion.div>
   );
