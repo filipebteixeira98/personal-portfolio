@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
 
-import { fadeUp, staggerContainer } from '@/lib/animations';
-
 import { SectionHeader } from '@/components/SectionHeader';
 import { ServiceCard } from '@/components/ServiceCard';
 
 import { services } from '@/constants';
+
+import { fadeUp, staggerContainer } from '@/lib/animations';
 
 export function Services() {
   return (
