@@ -1,11 +1,10 @@
 import {
   Briefcase,
-  Facebook,
   FileText,
   Globe,
   Home,
-  Instagram,
   Layers,
+  Linkedin,
   Mail,
   Palette,
   Rocket,
@@ -45,24 +44,19 @@ const navLinks: LinksType[] = [
 
 const socialLinks: LinksType[] = [
   {
-    icon: Facebook,
-    label: 'Facebook',
-    link: '/#',
-  },
-  {
-    icon: Instagram,
-    label: 'Instagram',
-    link: '/#',
+    icon: Linkedin,
+    label: 'Linkedin',
+    link: 'https://www.linkedin.com/in/filipebarrosteixeira',
   },
   {
     icon: Twitter,
     label: 'Twitter',
-    link: '/#',
+    link: 'https://x.com/filipebtx',
   },
   {
     icon: Youtube,
     label: 'Youtube',
-    link: '/#',
+    link: 'https://www.youtube.com/@logdodev',
   },
 ];
 
