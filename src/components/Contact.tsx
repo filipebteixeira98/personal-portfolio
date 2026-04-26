@@ -2,13 +2,13 @@ import { Send } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Controller, useForm } from 'react-hook-form';
 
-import { fadeUp } from '@/lib/animations';
-
 import { SectionHeader } from '@/components/SectionHeader';
 import { Button } from '@/components/ui/button';
 import { Field, FieldError, FieldLabel } from '@/components/ui/field';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+
+import { fadeUp } from '@/lib/animations';
 
 type ContactFormValues = {
   name: string;
