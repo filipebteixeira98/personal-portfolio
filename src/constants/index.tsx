@@ -178,32 +178,32 @@ const tools: ToolsType[] = [
 
 const services: ServiceType[] = [
   {
-    title: 'Brand Identity',
-    desc: 'I craft modern visual identities that help brands stand out through strong typography, colors, and minimal design.',
+    title: 'Identity Design',
+    desc: 'Modern. Minimal. Unforgettable. I use bold typography and striking color stories to give your brand a distinct visual edge in a crowded market',
     projects: '32 Projects',
     icon: <Palette className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'UI/UX Design',
-    desc: 'Designing clean, intuitive, and user-friendly interfaces that improve user experience and boost conversions.',
+    desc: 'Intuitive by design. Conversion-led by nature. I build clean, high-performing digital products that eliminate clutter and put the user first',
     projects: '47 Projects',
     icon: <Layers className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Web Development',
-    desc: 'Building high-performance, SEO-friendly websites using Next.js, Tailwind, and modern web technologies.',
+    desc: 'Built for speed. Optimized for growth. I craft cutting-edge websites using Next.js and Tailwind to ensure your brand is fast, responsive, and impossible to ignore on search engines',
     projects: '58 Projects',
     icon: <Globe className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Mobile App Design',
-    desc: 'Creating pixel-perfect app interfaces optimized for both iOS and Android devices with smooth usability.',
+    desc: 'Native feel. Universal appeal. I craft sharp, pixel-perfect app interfaces for iOS and Android that prioritize fluid motion and uncompromising usability',
     projects: '21 Projects',
     icon: <Smartphone className='h-6 w-6 text-green-400' />,
   },
   {
     title: 'Product Launch Strategy',
-    desc: 'Helping startups prepare their digital products for launch with design systems, marketing pages, and assets.',
+    desc: 'From concept to "Live." I build the design systems, landing pages, and marketing kits that startups need to cut through the noise and launch with total confidence',
     projects: '15 Projects',
     icon: <Rocket className='h-6 w-6 text-green-400' />,
   },
