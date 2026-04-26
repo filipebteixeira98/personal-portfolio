@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
-
-import { fadeUp, staggerContainer } from '@/lib/animations';
+import { useMemo } from 'react';
 
 import { ExperienceCard } from '@/components/ExperienceCard';
 import { SectionHeader } from '@/components/SectionHeader';
@@ -8,7 +7,26 @@ import { ToolsCard } from '@/components/ToolsCard';
 
 import { education, experience, tools } from '@/constants';
 
+import { fadeUp, staggerContainer } from '@/lib/animations';
+
+type Identifiable<T> = T & { id: string };
+
+const getUniqueIdentifier = <T,>(item: T): Identifiable<T> => ({
+  ...item,
+  id: crypto.randomUUID(),
+});
+
 export function Resume() {
+  const formattedEducation = useMemo(
+    () => education.map(getUniqueIdentifier),
+    [],
+  );
+  const formattedExperience = useMemo(
+    () => experience.map(getUniqueIdentifier),
+    [],
+  );
+  const formattedTools = useMemo(() => tools.map(getUniqueIdentifier), []);
+
   return (
     <motion.section
       initial='hidden'
@@ -26,10 +44,12 @@ export function Resume() {
         variants={fadeUp}
         className='mt-4 text-neutral-300'
       >
-        With a background in Computer Science and hands-on experience in
-        software development, I've worked on diverse projects ranging from
-        landing pages to SaaS dashboards. Each project has strengthened my focus
-        on building clean, functional, and user-friendly digital experiences
+        Turning ideas into digital reality. As a Full-Stack Developer, I
+        specialize in crafting high-performance, scalable applications using
+        React, Node.js, and TypeScript. I don't just write code; I build systems
+        with a focus on technical discipline, clean architecture, and long-term
+        maintainability. I am driven by a commitment to rigorous standards and
+        delivering results that scale
       </motion.p>
       <div className='grid gap-x-10 my-16 md:grid-cols-2'>
         <motion.div
@@ -38,9 +58,9 @@ export function Resume() {
         >
           <h2 className='text-3xl font-semibold mb-8'>Education</h2>
           <div className='space-y-8 border-l border-neutral-700 pl-6'>
-            {education.map((item, index) => (
+            {formattedEducation.map((item) => (
               <ExperienceCard
-                key={index}
+                key={item.id}
                 item={item}
               />
             ))}
@@ -49,9 +69,9 @@ export function Resume() {
         <motion.div variants={fadeUp}>
           <h2 className='text-3xl font-semibold mb-8'>Work Experience</h2>
           <div className='space-y-8 border-l border-border pl-6'>
-            {experience.map((item, index) => (
+            {formattedExperience.map((item) => (
               <ExperienceCard
-                key={index}
+                key={item.id}
                 item={item}
               />
             ))}
@@ -72,10 +92,10 @@ export function Resume() {
           variants={staggerContainer(0.5)}
           className='grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-5'
         >
-          {tools.map((tool, index) => (
+          {formattedTools.map((item) => (
             <ToolsCard
-              key={index}
-              tool={tool}
+              key={item.id}
+              tool={item}
             />
           ))}
         </motion.div>
