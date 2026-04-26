@@ -7,7 +7,6 @@ import {
   Instagram,
   Layers,
   Mail,
-  MessageCircle,
   Palette,
   Rocket,
   Settings,
@@ -41,11 +40,6 @@ const navLinks: LinksType[] = [
     icon: Settings,
   },
   { label: 'Resume', link: '#resume', icon: FileText },
-  {
-    label: 'Reviews',
-    link: '#testimonials',
-    icon: MessageCircle,
-  },
   { label: 'Contact', link: '#contact', icon: Mail },
 ];
 
