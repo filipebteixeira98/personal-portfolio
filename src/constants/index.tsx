@@ -1,13 +1,3 @@
-import type {
-  ExperienceType,
-  LinksType,
-  ProjectType,
-  ServiceType,
-  StatsType,
-  TestimonialsType,
-  ToolsType,
-} from '@/types';
-
 import {
   Briefcase,
   Facebook,
@@ -26,6 +16,16 @@ import {
   User,
   Youtube,
 } from 'lucide-react';
+
+import type {
+  ExperienceType,
+  LinksType,
+  ProjectType,
+  ServiceType,
+  StatsType,
+  TestimonialsType,
+  ToolsType,
+} from '@/types';
 
 const navLinks: LinksType[] = [
   { label: 'Home', link: '#hero', icon: Home },
@@ -101,37 +101,43 @@ const projectsData: ProjectType[] = [
 
 const education: ExperienceType[] = [
   {
-    year: '2018 – 2020',
-    title: 'Bachelor of Computer Science',
-    institute: 'National University of Technology',
-    desc: 'Focused on front-end development, UI design, and web application architecture.',
+    year: '2025 – 2027',
+    title: 'Analysis and Systems Development Technician',
+    institute: 'FIAP',
+    desc: 'Focused on front-end development, UI design, and web application architecture',
   },
   {
-    year: '2021 – 2022',
-    title: 'Frontend Development Bootcamp',
-    institute: 'Udemy / Online Course',
-    desc: 'Learned modern JavaScript, React, and responsive UI patterns through real-world projects.',
-  },
-  {
-    year: '2023',
-    title: 'Advanced UI/UX Design Course',
-    institute: 'Design+Code',
-    desc: 'Explored advanced design systems, motion design, and accessibility best practices.',
+    year: '2025',
+    title: 'Ignite Bootcamp',
+    institute: 'Rocketseat',
+    desc: 'Learned modern JavaScript, React, and responsive UI patterns through real-world projects',
   },
 ];
 
 const experience: ExperienceType[] = [
   {
-    year: '2021 – 2022',
-    title: 'Frontend Developer Intern',
-    institute: 'PixelForge Studio',
-    desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
+    year: '2024',
+    title: 'Mobile Development Intern',
+    institute: 'Escavador',
+    desc: 'Leveraged React Native, TypeScript, and Firebase to scale B2C applications and migrate to Expo SDK, optimizing build efficiency and UX flows that significantly reduced input errors and accelerated production issue resolution',
   },
   {
-    year: '2022 – Present',
-    title: 'UI Engineer',
-    institute: 'Freelance / Remote Work',
-    desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
+    year: '2025',
+    title: 'Full stack development intern',
+    institute: 'Aggressive Solutions',
+    desc: 'Built scalable full-stack features using NestJS and Vue.js, integrating Drizzle ORM and Cron Jobs to automate complex data processing while ensuring 100% data consistency and high system reliability through rigorous Jest unit testing',
+  },
+  {
+    year: '2025',
+    title: 'Mobile developer',
+    institute: 'Hooney+',
+    desc: 'Developed complex, modular React Native interfaces using the Composition Pattern and React Query, collaborating on backend endpoints to reduce latency and implementing Push Notifications that significantly boosted user engagement and retention',
+  },
+  {
+    year: '2025 - 2026',
+    title: 'Full stack developer',
+    institute: 'PixaFlow',
+    desc: 'Engineered intelligent conversational systems using RAG, LangChain, and FAISS, while optimizing delivery cycles through Docker and secure Python/Node.js APIs to enhance deployment velocity and significantly reduce operational costs',
   },
 ];
 
@@ -205,11 +211,7 @@ const services: ServiceType[] = [
 
 const statsData: StatsType[] = [
   {
-    number: '30+',
-    label: 'Happy Clients',
-  },
-  {
-    number: '05+',
+    number: '01+',
     label: 'Years Of Experience',
   },
   {
@@ -243,13 +245,13 @@ const testimonials: TestimonialsType[] = [
 ];
 
 export {
-  socialLinks,
-  projectsData,
   education,
   experience,
-  tools,
-  services,
   navLinks,
+  projectsData,
+  services,
+  socialLinks,
   statsData,
   testimonials,
+  tools,
 };
