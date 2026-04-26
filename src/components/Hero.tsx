@@ -25,8 +25,8 @@ export function Hero() {
         variants={fadeUp}
         className='text-4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md:leading-16'
       >
-        I'm <span className='text-primary'>Filipe</span> Full stack developer
-        with a passion for web applications.
+        I'm <span className='text-primary'>Filipe Teixeira</span> <br /> I build
+        seamless, full-stack experiences from ideation to launch
       </motion.h1>
       <motion.div
         variants={fadeUp}
