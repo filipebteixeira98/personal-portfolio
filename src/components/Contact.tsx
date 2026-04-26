@@ -1,37 +1,37 @@
 import { Send } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Controller, useForm } from 'react-hook-form';
+// import { Controller, useForm } from 'react-hook-form';
 
 import { SectionHeader } from '@/components/SectionHeader';
 import { Button } from '@/components/ui/button';
-import { Field, FieldError, FieldLabel } from '@/components/ui/field';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+// import { Field, FieldError, FieldLabel } from '@/components/ui/field';
+// import { Input } from '@/components/ui/input';
+// import { Textarea } from '@/components/ui/textarea';
 
 import { fadeUp } from '@/lib/animations';
 
-type ContactFormValues = {
-  name: string;
-  company: string;
-  email: string;
-  phone: string;
-  message: string;
-};
+// type ContactFormValues = {
+//   name: string;
+//   company: string;
+//   email: string;
+//   phone: string;
+//   message: string;
+// };
 
 export function Contact() {
-  const form = useForm<ContactFormValues>({
-    defaultValues: {
-      name: '',
-      company: '',
-      email: '',
-      phone: '',
-      message: '',
-    },
-  });
+  // const form = useForm<ContactFormValues>({
+  //   defaultValues: {
+  //     name: '',
+  //     company: '',
+  //     email: '',
+  //     phone: '',
+  //     message: '',
+  //   },
+  // });
 
-  function handleSubmit(values: ContactFormValues) {
-    console.log(values);
-  }
+  // function handleSubmit(values: ContactFormValues) {
+  //   console.log(values);
+  // }
 
   return (
     <motion.section
@@ -46,7 +46,7 @@ export function Contact() {
         subtitle='Contact'
         title="Let's make something awesome together!"
       />
-      <form
+      {/* <form
         id='form-rhf-demo'
         onSubmit={form.handleSubmit(handleSubmit)}
         className='w-full mx-auto space-y-4 mt-10'
@@ -167,14 +167,18 @@ export function Contact() {
             </Field>
           )}
         />
-        <Button
-          type='submit'
-          size='lg'
-        >
+      </form> */}
+      <Button
+        // type='submit'
+        size='lg'
+        className='mt-10'
+        asChild
+      >
+        <a href='https://wa.me/5571983824160?text=Hi%20Filipe%2C%0A%0AI%20saw%20your%20work%20and%20I%E2%80%99m%20interested%20in%20your%20developer%20services.%20Are%20you%20available%20for%20a%20new%20project%3F%0A%0ABest%2C'>
           <Send size={15} />
           Send message
-        </Button>
-      </form>
+        </a>
+      </Button>
     </motion.section>
   );
 }
