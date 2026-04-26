@@ -7,7 +7,7 @@ export function Profile() {
     <aside className='max-w-3xl border m-6 border-neutral-600 bg-neutral-900 text-white p-6 rounded-lg lg:sticky lg:left-0 lg:top-6 lg:w-96'>
       <div className='flex flex-col gap-4'>
         <img
-          src='/avatar.jpg'
+          src='/profile.png'
           alt='Me'
           className='lg:w-96 rounded-2xl object-cover'
         />
