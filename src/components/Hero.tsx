@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 import { fadeUp, staggerContainer } from '@/lib/animations';
 
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 
 export function Hero() {
   return (
@@ -32,10 +32,10 @@ export function Hero() {
         variants={fadeUp}
         className='mt-5 flex gap-2'
       >
-        <Button asChild>
+        {/* <Button asChild>
           <a href='#projects'>My projects</a>
         </Button>
-        <Button variant='outline'>Download CV</Button>
+        <Button variant='outline'>Download CV</Button> */}
       </motion.div>
     </motion.section>
   );
