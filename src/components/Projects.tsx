@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
 
-import { staggerContainer } from '@/lib/animations';
+import { ProjectCard } from '@/components/ProjectCard';
+import { SectionHeader } from '@/components/SectionHeader';
 
 import { projectsData } from '@/constants';
 
-import { ProjectCard } from '@/components/ProjectCard';
-import { SectionHeader } from '@/components/SectionHeader';
+import { staggerContainer } from '@/lib/animations';
 
 export function Projects() {
   return (

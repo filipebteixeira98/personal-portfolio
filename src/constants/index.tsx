@@ -1,6 +1,7 @@
 import {
   Briefcase,
   FileText,
+  Github,
   Globe,
   Home,
   Layers,
@@ -44,6 +45,11 @@ const navLinks: LinksType[] = [
 
 const socialLinks: LinksType[] = [
   {
+    icon: Github,
+    label: 'Github',
+    link: 'https://github.com/filipebteixeira98',
+  },
+  {
     icon: Linkedin,
     label: 'Linkedin',
     link: 'https://www.linkedin.com/in/filipebarrosteixeira',
@@ -62,28 +68,30 @@ const socialLinks: LinksType[] = [
 
 const projectsData: ProjectType[] = [
   {
-    imgSrc: '/images/project-ph-1.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/mockup-feedget.png',
+    title:
+      'User-friendly component for sending instant feedback in React Native apps',
+    tags: ['Mobile', 'Development', 'React Native'],
+    projectLink: 'https://github.com/filipebteixeira98/feedget-app/',
   },
   {
-    imgSrc: '/images/project-ph-2.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/mockup-ignite-feed.png',
+    title: 'A responsive social media UI optimized with React and Vite',
+    tags: ['Front-End', 'Development', 'React', 'Vite'],
+    projectLink: 'https://ignite-feed-amber-nine.vercel.app/',
   },
   {
-    imgSrc: '/images/project-ph-3.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/mockup-spotify-ui-clone.png',
+    title: 'React + Next.js: A lightning-fast tribute to the Spotify interface',
+    tags: ['Front-End', 'Development', 'React', 'Next.js'],
+    projectLink: 'https://spotify-ui-clone-lemon.vercel.app/',
   },
   {
-    imgSrc: '/images/project-ph-4.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: '/images/mockup-saas-landing-page-template.png',
+    title:
+      'Minimize your time-to-market with a high-performance, easy-to-edit landing page template',
+    tags: ['Front-End', 'Development', 'HTML', 'CSS', 'JavaScript'],
+    projectLink: 'https://saas-platform-eosin-five.vercel.app/',
   },
 ];
 
